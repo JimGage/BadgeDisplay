@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name BadgeDisplay-rescue)(type Legacy)(uri ${KIPRJMOD}/BadgeDisplay-rescue.lib)(options "")(descr ""))
+  (lib (name power1)(type Legacy)(uri "C:/Program Files/KiCad/share/kicad/library/power.lib")(options "")(descr ""))
+  (lib (name device1)(type Legacy)(uri "C:/Program Files/KiCad/share/kicad/library/device.lib")(options "")(descr ""))
+  (lib (name 74xx1)(type Legacy)(uri "C:/Program Files/KiCad/share/kicad/library/74xx.lib")(options "")(descr ""))
+  (lib (name audio1)(type Legacy)(uri "C:/Program Files/KiCad/share/kicad/library/audio.lib")(options "")(descr ""))
+  (lib (name interface1)(type Legacy)(uri "C:/Program Files/KiCad/share/kicad/library/interface.lib")(options "")(descr ""))
+  (lib (name LocalParts)(type Legacy)(uri E:/Dev/Siggraph/PCB.save/LocalParts.lib)(options "")(descr ""))
+)

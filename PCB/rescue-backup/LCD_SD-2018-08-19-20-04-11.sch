@@ -1,0 +1,524 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LocalParts
+LIBS:switches
+LIBS:BadgeDisplay-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LCD_40PIN U5
+U 1 1 5B3D6D4A
+P 9650 3050
+F 0 "U5" H 10077 3108 60  0000 L CNN
+F 1 "LCD_40PIN" H 9450 3150 60  0000 L CNN
+F 2 "LocalFootprints:40Pin_conn_05Pitch" H 9650 3250 60  0001 C CNN
+F 3 "" H 9650 3250 60  0001 C CNN
+	1    9650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Micro_SD_Card_Det J1
+U 1 1 5B3D82AB
+P 4850 6000
+F 0 "J1" H 4800 6817 50  0000 C CNN
+F 1 "Micro_SD_Card_Det" H 4800 6726 50  0000 C CNN
+F 2 "Connectors_Card:Hirose_DM3BT-DSF-PEJS" H 6900 6700 50  0001 C CNN
+F 3 "" H 4850 6100 50  0001 C CNN
+	1    4850 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 7250 5650 7250
+Wire Wire Line
+	5650 7250 5650 6500
+$Comp
+L GND #PWR035
+U 1 1 5B3D8344
+P 4600 7400
+F 0 "#PWR035" H 4600 7150 50  0001 C CNN
+F 1 "GND" H 4605 7227 50  0000 C CNN
+F 2 "" H 4600 7400 50  0001 C CNN
+F 3 "" H 4600 7400 50  0001 C CNN
+	1    4600 7400
+	1    0    0    -1  
+$EndComp
+Text Label 3550 5700 2    60   ~ 0
+SD_CS
+Text Label 3550 5800 2    60   ~ 0
+SDI
+Text Label 3550 6200 2    60   ~ 0
+SDO
+Text Label 3550 6000 2    60   ~ 0
+SCLK
+$Comp
+L +3V3 #PWR036
+U 1 1 5B3D83CD
+P 2600 5650
+F 0 "#PWR036" H 2600 5500 50  0001 C CNN
+F 1 "+3V3" H 2615 5823 50  0000 C CNN
+F 2 "" H 2600 5650 50  0001 C CNN
+F 3 "" H 2600 5650 50  0001 C CNN
+	1    2600 5650
+	1    0    0    -1  
+$EndComp
+Text Label 3550 6400 2    60   ~ 0
+CARD_DETECT
+Wire Wire Line
+	3950 6100 2800 6100
+Wire Wire Line
+	2800 6100 2800 7250
+Wire Wire Line
+	4600 7400 4600 7250
+Connection ~ 4600 7250
+Wire Wire Line
+	3550 6200 3950 6200
+Wire Wire Line
+	3550 6000 3950 6000
+Wire Wire Line
+	3950 5900 2600 5900
+Wire Wire Line
+	2600 5900 2600 5650
+Wire Wire Line
+	3550 5800 3950 5800
+Wire Wire Line
+	3550 5700 3950 5700
+Wire Wire Line
+	3550 6400 3950 6400
+$Comp
+L R R20
+U 1 1 5B3D8877
+P 8050 4400
+F 0 "R20" V 7950 4400 50  0000 C CNN
+F 1 "10" V 8050 4400 50  0000 C CNN
+F 2 "LocalFootprints:R_0603" V 7980 4400 50  0001 C CNN
+F 3 "" H 8050 4400 50  0001 C CNN
+	1    8050 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R21
+U 1 1 5B3D88E5
+P 8050 4600
+F 0 "R21" V 7950 4600 50  0000 C CNN
+F 1 "10" V 8050 4600 50  0000 C CNN
+F 2 "LocalFootprints:R_0603" V 7980 4600 50  0001 C CNN
+F 3 "" H 8050 4600 50  0001 C CNN
+	1    8050 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R22
+U 1 1 5B3D8942
+P 8050 4800
+F 0 "R22" V 7950 4800 50  0000 C CNN
+F 1 "10" V 8050 4800 50  0000 C CNN
+F 2 "LocalFootprints:R_0603" V 7980 4800 50  0001 C CNN
+F 3 "" H 8050 4800 50  0001 C CNN
+	1    8050 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L MMBT3904 Q1
+U 1 1 5B3D8B09
+P 7450 5200
+F 0 "Q1" H 7641 5246 50  0000 L CNN
+F 1 "MMBT3904" H 7641 5155 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7650 5125 50  0001 L CIN
+F 3 "" H 7450 5200 50  0001 L CNN
+	1    7450 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 5B3D8B54
+P 6900 5200
+F 0 "R19" V 6800 5200 50  0000 C CNN
+F 1 "1K" V 6900 5200 50  0000 C CNN
+F 2 "LocalFootprints:R_0603" V 6830 5200 50  0001 C CNN
+F 3 "" H 6900 5200 50  0001 C CNN
+	1    6900 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR037
+U 1 1 5B3D8CB7
+P 7550 5650
+F 0 "#PWR037" H 7550 5400 50  0001 C CNN
+F 1 "GND" H 7555 5477 50  0000 C CNN
+F 2 "" H 7550 5650 50  0001 C CNN
+F 3 "" H 7550 5650 50  0001 C CNN
+	1    7550 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR038
+U 1 1 5B3D8CEE
+P 8350 4100
+F 0 "#PWR038" H 8350 3950 50  0001 C CNN
+F 1 "+3V3" H 8365 4273 50  0000 C CNN
+F 2 "" H 8350 4100 50  0001 C CNN
+F 3 "" H 8350 4100 50  0001 C CNN
+	1    8350 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4100 8350 4300
+Wire Wire Line
+	8350 4300 8900 4300
+Wire Wire Line
+	8200 4400 8900 4400
+Wire Wire Line
+	8200 4600 8250 4600
+Wire Wire Line
+	8250 4600 8250 4500
+Wire Wire Line
+	8250 4500 8900 4500
+Wire Wire Line
+	8200 4800 8350 4800
+Wire Wire Line
+	8350 4800 8350 4600
+Wire Wire Line
+	8350 4600 8900 4600
+Wire Wire Line
+	8900 4700 8450 4700
+Wire Wire Line
+	8450 4700 8450 5550
+Wire Wire Line
+	8450 5550 7550 5550
+Wire Wire Line
+	7550 5400 7550 5650
+Connection ~ 7550 5550
+Wire Wire Line
+	7550 4400 7550 5000
+Wire Wire Line
+	7550 4600 7900 4600
+Wire Wire Line
+	7900 4400 7550 4400
+Connection ~ 7550 4600
+Wire Wire Line
+	7900 4800 7550 4800
+Connection ~ 7550 4800
+Wire Wire Line
+	8900 4800 8450 4800
+Connection ~ 8450 4800
+Wire Wire Line
+	8900 4900 8700 4900
+Wire Wire Line
+	8700 4300 8700 5000
+Connection ~ 8700 4300
+Wire Wire Line
+	8700 5000 8900 5000
+Connection ~ 8700 4900
+Wire Wire Line
+	8900 2700 8600 2700
+Wire Wire Line
+	8600 2600 8600 4700
+Connection ~ 8600 4700
+Wire Wire Line
+	8900 2600 8600 2600
+Connection ~ 8600 2700
+Wire Wire Line
+	8900 2800 8600 2800
+Connection ~ 8600 2800
+Wire Wire Line
+	8900 2900 8600 2900
+Connection ~ 8600 2900
+Wire Wire Line
+	8900 3000 8600 3000
+Connection ~ 8600 3000
+Wire Wire Line
+	8900 3100 8600 3100
+Connection ~ 8600 3100
+Wire Wire Line
+	8900 3200 8600 3200
+Connection ~ 8600 3200
+Wire Wire Line
+	8900 3300 8600 3300
+Connection ~ 8600 3300
+Wire Wire Line
+	8900 3400 8600 3400
+Connection ~ 8600 3400
+Wire Wire Line
+	8900 3500 8600 3500
+Connection ~ 8600 3500
+Wire Wire Line
+	8900 3600 8600 3600
+Connection ~ 8600 3600
+Wire Wire Line
+	8900 3700 8600 3700
+Connection ~ 8600 3700
+Wire Wire Line
+	8900 3800 8600 3800
+Connection ~ 8600 3800
+Wire Wire Line
+	8900 3900 8600 3900
+Connection ~ 8600 3900
+Wire Wire Line
+	8900 4000 8600 4000
+Connection ~ 8600 4000
+Wire Wire Line
+	8900 4100 8600 4100
+Connection ~ 8600 4100
+Wire Wire Line
+	8900 4200 8600 4200
+Connection ~ 8600 4200
+Text Label 8500 2000 2    60   ~ 0
+SCLK
+Text Label 8500 2300 2    60   ~ 0
+SDI
+Text Label 8500 2400 2    60   ~ 0
+SDO
+Text Label 8500 2500 2    60   ~ 0
+LCD_RESET
+Text Label 8500 2100 2    60   ~ 0
+CMD
+Text Label 8500 1900 2    60   ~ 0
+LCD_CS
+Wire Wire Line
+	8500 1900 8900 1900
+Wire Wire Line
+	8500 2000 8900 2000
+Wire Wire Line
+	8500 2100 8900 2100
+Wire Wire Line
+	8500 2300 8900 2300
+Wire Wire Line
+	8500 2400 8900 2400
+Wire Wire Line
+	8500 2500 8900 2500
+Wire Wire Line
+	7050 5200 7250 5200
+$Comp
+L +3V3 #PWR039
+U 1 1 5B3D99A4
+P 8150 950
+F 0 "#PWR039" H 8150 800 50  0001 C CNN
+F 1 "+3V3" H 8165 1123 50  0000 C CNN
+F 2 "" H 8150 950 50  0001 C CNN
+F 3 "" H 8150 950 50  0001 C CNN
+	1    8150 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR040
+U 1 1 5B3D99DB
+P 8800 1500
+F 0 "#PWR040" H 8800 1250 50  0001 C CNN
+F 1 "GND" V 8805 1372 50  0000 R CNN
+F 2 "" H 8800 1500 50  0001 C CNN
+F 3 "" H 8800 1500 50  0001 C CNN
+	1    8800 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 1500 8900 1500
+Wire Wire Line
+	8150 950  8150 1700
+Wire Wire Line
+	8150 1700 8900 1700
+Wire Wire Line
+	8900 1600 8150 1600
+Connection ~ 8150 1600
+Text Label 6550 5200 2    60   ~ 0
+BK_LIGHT
+Wire Wire Line
+	6550 5200 6750 5200
+$Comp
+L GND #PWR041
+U 1 1 5B3D9BDD
+P 5350 3450
+F 0 "#PWR041" H 5350 3200 50  0001 C CNN
+F 1 "GND" H 5355 3277 50  0000 C CNN
+F 2 "" H 5350 3450 50  0001 C CNN
+F 3 "" H 5350 3450 50  0001 C CNN
+	1    5350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR042
+U 1 1 5B3D9C14
+P 5350 2800
+F 0 "#PWR042" H 5350 2650 50  0001 C CNN
+F 1 "+3V3" H 5365 2973 50  0000 C CNN
+F 2 "" H 5350 2800 50  0001 C CNN
+F 3 "" H 5350 2800 50  0001 C CNN
+	1    5350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C22
+U 1 1 5B3D9C67
+P 4700 3100
+F 0 "C22" H 4815 3146 50  0000 L CNN
+F 1 "0u1" H 4815 3055 50  0000 L CNN
+F 2 "LocalFootprints:C_0603" H 4738 2950 50  0001 C CNN
+F 3 "" H 4700 3100 50  0001 C CNN
+	1    4700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C23
+U 1 1 5B3D9CA7
+P 5350 3100
+F 0 "C23" H 5465 3146 50  0000 L CNN
+F 1 "0u1" H 5465 3055 50  0000 L CNN
+F 2 "LocalFootprints:C_0603" H 5388 2950 50  0001 C CNN
+F 3 "" H 5350 3100 50  0001 C CNN
+	1    5350 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C24
+U 1 1 5B3D9CE9
+P 5850 3100
+F 0 "C24" H 5965 3146 50  0000 L CNN
+F 1 "1u" H 5965 3055 50  0000 L CNN
+F 2 "LocalFootprints:C_0603" H 5888 2950 50  0001 C CNN
+F 3 "" H 5850 3100 50  0001 C CNN
+	1    5850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2950 4700 2850
+Wire Wire Line
+	4700 2850 5850 2850
+Wire Wire Line
+	5850 2850 5850 2950
+Wire Wire Line
+	4700 3250 4700 3400
+Wire Wire Line
+	4700 3400 5850 3400
+Wire Wire Line
+	5850 3400 5850 3250
+Wire Wire Line
+	5350 3250 5350 3450
+Connection ~ 5350 3400
+Wire Wire Line
+	5350 2800 5350 2950
+Connection ~ 5350 2850
+Text HLabel 1900 2000 0    60   Input ~ 0
+SD_CS
+Text HLabel 1900 2200 0    60   Input ~ 0
+SDI
+Text HLabel 1900 2600 0    60   Input ~ 0
+SCLK
+Text HLabel 1900 2400 0    60   Input ~ 0
+SD0
+Text HLabel 1900 2800 0    60   Input ~ 0
+CARD_DETECT
+Text HLabel 1900 1800 0    60   Input ~ 0
+LCD_CS
+Text HLabel 1900 3000 0    60   Input ~ 0
+CMD
+Text HLabel 1900 3200 0    60   Input ~ 0
+LCD_RESET
+Text HLabel 1900 3400 0    60   Input ~ 0
+BK_LIGHT
+Text Label 2300 1800 0    60   ~ 0
+LCD_CS
+Text Label 2300 2000 0    60   ~ 0
+SD_CS
+Text Label 2300 2200 0    60   ~ 0
+SDI
+Text Label 2300 2400 0    60   ~ 0
+SDO
+Text Label 2300 2600 0    60   ~ 0
+SCLK
+Text Label 2300 2800 0    60   ~ 0
+CARD_DETECT
+Text Label 2300 3000 0    60   ~ 0
+CMD
+Text Label 2300 3200 0    60   ~ 0
+LCD_RESET
+Text Label 2300 3400 0    60   ~ 0
+BKLIGHT
+Wire Wire Line
+	1900 1800 2300 1800
+Wire Wire Line
+	1900 2000 2300 2000
+Wire Wire Line
+	1900 2200 2300 2200
+Wire Wire Line
+	1900 2400 2300 2400
+Wire Wire Line
+	1900 2600 2300 2600
+Wire Wire Line
+	1900 2800 2300 2800
+Wire Wire Line
+	1900 3000 2300 3000
+Wire Wire Line
+	1900 3200 2300 3200
+Wire Wire Line
+	1900 3400 2300 3400
+Text HLabel 8500 1100 0    60   Input ~ 0
+XL
+Text HLabel 8500 1200 0    60   Input ~ 0
+YU
+Text HLabel 8500 1300 0    60   Input ~ 0
+XR
+Text HLabel 8500 1400 0    60   Input ~ 0
+YD
+Wire Wire Line
+	8500 1100 8900 1100
+Wire Wire Line
+	8500 1200 8900 1200
+Wire Wire Line
+	8500 1300 8900 1300
+Wire Wire Line
+	8500 1400 8900 1400
+$Comp
+L GND #PWR0106
+U 1 1 5B660952
+P 3800 6600
+F 0 "#PWR0106" H 3800 6350 50  0001 C CNN
+F 1 "GND" H 3805 6427 50  0000 C CNN
+F 2 "" H 3800 6600 50  0001 C CNN
+F 3 "" H 3800 6600 50  0001 C CNN
+	1    3800 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6600 3800 6500
+Wire Wire Line
+	3800 6500 3950 6500
+$EndSCHEMATC
